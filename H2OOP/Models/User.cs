@@ -2,17 +2,13 @@
 
 namespace H2OOP.Models
 {
-    public class User
+    public class User(string? name)
     {
-        public string? Name { get; set; }
+        public string? Name { get; set; } = name;
         public string? UserId { get; set; } = Guid.NewGuid().ToString();
         public List<Book> BorrowedBooks { get; set; } = [];
-        public int MaximumAllowedBooks { get; set; } = 5;
+        public ushort MaximumAllowedBooks { get; set; } = 5;
 
-        public User(string? name) 
-        {
-            Name = name;
-        }
         public Book BorrowBook(Book book)
         {
             book.ChangeAvailability();
