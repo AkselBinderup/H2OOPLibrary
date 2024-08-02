@@ -36,6 +36,8 @@ public class UnitTestLibrary
         Assert.True(library.FindBookByISBN(book2.ISBN).Author is "Franz Kafka");
 
         library.RemoveBook(book1);
+        Assert.Throws<InvalidOperationException>(() => library.FindBookByISBN(book1.ISBN).Title is "The Lord Of The Flies");
+        Assert.Throws<InvalidOperationException>(() => library.FindBookByISBN(book1.ISBN).Author is "William Golding");
         Assert.True(library.Books.Count is 1);
 
     }

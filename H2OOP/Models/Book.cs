@@ -15,10 +15,7 @@ public class Book
     }
     public void ChangeAvailability()
     {
-        if(IsAvailable)
-            IsAvailable = false;
-        else
-            IsAvailable = true;
+        IsAvailable = !IsAvailable;
     }
     public string DisplayInfo()
     {

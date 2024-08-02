@@ -24,7 +24,6 @@ namespace H2OOP.Models
 
             return book;
         }
-        //Todo: find lige ud af hvordan det skal udskrives takker
         public List<Book> DisplayBorrowedBooks() => BorrowedBooks;
 
     }
