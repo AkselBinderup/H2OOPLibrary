@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2OOP", "H2OOP\H2OOP.csproj", "{8EF58182-C967-4D99-A0CB-CDAC12B0F8D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "H2OOPXUnitTest", "H2OOPXUnitTest\H2OOPXUnitTest.csproj", "{0B3D4825-211B-473C-BB4A-79ED38457119}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EF58182-C967-4D99-A0CB-CDAC12B0F8D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF58182-C967-4D99-A0CB-CDAC12B0F8D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF58182-C967-4D99-A0CB-CDAC12B0F8D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF58182-C967-4D99-A0CB-CDAC12B0F8D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B3D4825-211B-473C-BB4A-79ED38457119}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B3D4825-211B-473C-BB4A-79ED38457119}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B3D4825-211B-473C-BB4A-79ED38457119}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B3D4825-211B-473C-BB4A-79ED38457119}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F2FAEB0-95B4-43CB-82D9-04CEFFDC9D72}
+	EndGlobalSection
+EndGlobal
