@@ -22,37 +22,13 @@ public class Test
             }
         }
         Console.WriteLine("All books:");
-        foreach (Book book in library.Books)
-        {
-            Console.WriteLine($"Title: {book.Title} - Author: {book.Author}");
-        }
-        Console.WriteLine("All users:");
-        foreach (User user in library.Users)
-        {
-            Console.WriteLine($"User name: {user.Name}");
-        }
+        library.DisplayAllBooks(library);
+        
+        Console.WriteLine("All Borrowed books:");
+        library.DisplayAllBorrowedBooks(library);
 
-
-        Console.WriteLine("All available books:");
-        foreach(User user in library.Users)
-        {
-            if(user.BorrowedBooks.Count != 0)
-            {
-                Console.WriteLine($"{user.Name} borrowed: ");
-                foreach(var book in user.BorrowedBooks)
-                {
-                    Console.WriteLine($"Title: {book.Title} - Author: {book.Author} ISBN: {book.ISBN}");
-                }
-            }
-        }
         Console.WriteLine("Available books");
-        foreach(Book book in library.Books)
-        {
-            if (book.IsAvailable)
-            {
-                Console.WriteLine($"{book.Title} is available");
-            }
-        }
+        library.DisplayAllAvailableBooks(library);
 
         Console.WriteLine("Søg på ISBN: ");
         var ISBN = Console.ReadLine();
