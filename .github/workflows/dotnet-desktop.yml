@@ -57,7 +57,7 @@ jobs:
 
     env:
       Solution_Name: H2OOP                         # Replace with your solution name, i.e. MyWpfApp.sln.
-      Test_Project_Path: H2OOPUnitTest                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
+      Test_Project_Path: H2OOPXUnitTest                 # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
     steps:
     - name: Checkout
       uses: actions/checkout@v4
